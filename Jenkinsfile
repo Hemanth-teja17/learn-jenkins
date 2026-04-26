@@ -1,11 +1,14 @@
 pipeline {
+    // pre-build
      agent {
-        label 'agent-node'  // pre-build
+        label 'agent-node'  
      }
      options{
         timeout(time:10, unit: 'SECONDS')
+        disableConcurrentBuilds()
      }
-    stages{    // build
+ // build
+    stages{    
         stage('Build'){
             steps{
                 sh 'echo this is Build'
