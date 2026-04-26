@@ -2,10 +2,14 @@ pipeline {
      agent {
         label 'agent-node'  // pre-build
      }
+     options{
+        timeout(time:10, unit: 'SECONDS')
+     }
     stages{    // build
         stage('Build'){
             steps{
                 sh 'echo this is Build'
+                sh 'sleep 10'
             }
         }
         stage('Test'){
