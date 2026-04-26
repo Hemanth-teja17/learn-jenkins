@@ -12,7 +12,7 @@ pipeline {
         string(name: 'PERSON', defaultValue: 'Mr jenkins', description: 'its me')
         text(name: 'BIO', defaultValue: '', description: 'enter info')
         booleanParam(name: 'TOGGLE', defaultValue: true, description: 'Toggle this value')
-        choice (name: 'CHOICE', choice: ['one', 'two', 'Three'], description: 'pick somthing')
+        choice (name: 'CHOICE', choices: ['one', 'two', 'Three'], description: 'pick somthing')
         password (name:'PASSWORD', defaultValue: 'SELECT', description: 'enter password')
      }
  // build
