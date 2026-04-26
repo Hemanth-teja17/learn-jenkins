@@ -1,5 +1,5 @@
 pipeline {
-    lebel 'agent-node'  // pre-build
+    label 'agent-node'  // pre-build
     stages{    // build
         stage('Build'){
             steps{
