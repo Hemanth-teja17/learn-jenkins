@@ -1,7 +1,7 @@
 pipeline {
-    agent {
-    label 'agent-node'  // pre-build
-    }
+     agent {
+        label 'AGENT-NODE'  // pre-build
+     }
     stages{    // build
         stage('Build'){
             steps{
