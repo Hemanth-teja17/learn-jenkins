@@ -1,6 +1,6 @@
 pipeline {
-    agent any
-    stages{
+    lebel 'agent-node'  // pre-build
+    stages{    // build
         stage('Build'){
             steps{
                 sh 'echo this is Build'
