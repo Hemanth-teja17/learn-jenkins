@@ -1,5 +1,7 @@
 pipeline {
+    agent {
     label 'agent-node'  // pre-build
+    }
     stages{    // build
         stage('Build'){
             steps{
